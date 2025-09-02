@@ -19,15 +19,12 @@ class Command(BaseCommand):
             dc = Team.objects.create(name='DC')
 
             # Create users
-            users = [
-                User(name='Iron Man', email='ironman@marvel.com', team=marvel),
-                User(name='Captain America', email='cap@marvel.com', team=marvel),
-                User(name='Spider-Man', email='spiderman@marvel.com', team=marvel),
-                User(name='Superman', email='superman@dc.com', team=dc),
-                User(name='Batman', email='batman@dc.com', team=dc),
-                User(name='Wonder Woman', email='wonderwoman@dc.com', team=dc),
-            ]
-            User.objects.bulk_create(users)
+            User.objects.create(name='Iron Man', email='ironman@marvel.com', team=marvel)
+            User.objects.create(name='Captain America', email='cap@marvel.com', team=marvel)
+            User.objects.create(name='Spider-Man', email='spiderman@marvel.com', team=marvel)
+            User.objects.create(name='Superman', email='superman@dc.com', team=dc)
+            User.objects.create(name='Batman', email='batman@dc.com', team=dc)
+            User.objects.create(name='Wonder Woman', email='wonderwoman@dc.com', team=dc)
 
             # Create activities
             for user in User.objects.all():
