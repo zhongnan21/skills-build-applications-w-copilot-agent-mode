@@ -1,0 +1,112 @@
+
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+  color: #222e50;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background-color: #222e50;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #f7fafc;
+}
+
+
+.App-link {
+  color: #ff6f61;
+  text-decoration: underline;
+  font-weight: 500;
+}
+/* Table Styling */
+table.table {
+  background-color: #f7fafc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+thead.table-dark {
+  background-color: #222e50 !important;
+  color: #f7fafc;
+}
+tbody tr {
+  transition: background 0.2s;
+}
+tbody tr:hover {
+  background-color: #e3f2fd;
+}
+
+/* Button Styling */
+.btn-primary, .btn-dark, .btn-success, .btn-info {
+  background: linear-gradient(90deg, #ff6f61 0%, #222e50 100%);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(34,46,80,0.08);
+}
+.btn-primary:hover, .btn-dark:hover, .btn-success:hover, .btn-info:hover {
+  background: linear-gradient(90deg, #222e50 0%, #ff6f61 100%);
+  color: #fff;
+}
+
+/* Heading Styling */
+h1, h2, h3, h4, h5 {
+  color: #222e50;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+h1 span.text-primary {
+  color: #ff6f61 !important;
+}
+
+/* Navigation Styling */
+.navbar {
+  background: linear-gradient(90deg, #222e50 0%, #ff6f61 100%) !important;
+  box-shadow: 0 2px 8px rgba(34,46,80,0.08);
+}
+.navbar-brand, .nav-link {
+  color: #f7fafc !important;
+  font-weight: 600;
+}
+.nav-link.active, .nav-link:hover {
+  color: #ff6f61 !important;
+}
+
+/* Card Styling */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(34,46,80,0.10);
+  background: #fff;
+}
+
+/* Logo Styling */
+.octofit-logo {
+  height: 48px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
